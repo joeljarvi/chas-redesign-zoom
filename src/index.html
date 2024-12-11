@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html data-theme="zoomTheme" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Zoom</title>
+  </head>
+  <body class="bg-neutral-300">
+    <header class="fixed z-20 top-0 left-0">
+      <!----flexbox navbar-->
+      <div class="flex justify-between w-screen">
+        <!----zoom boxlogo-->
+        <div class="">
+          <div class="w-32 lg:w-32 sm:w-32 shadow-lg">
+            <a href="http://">
+              <?xml version="1.0" encoding="UTF-8"?><svg
+                id="Art"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 100 100"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: url(#linear-gradient);
+                    }
+                    .cls-2 {
+                      fill: #fff;
+                    }
+                  </style>
+                  <linearGradient
+                    id="linear-gradient"
+                    x1="15.84936"
+                    y1="-1425.13771"
+                    x2="84.15064"
+                    y2="-1306.83644"
+                    gradientTransform="translate(0 -1315.98707) scale(1 -1)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#0845bf" />
+                    <stop offset=".6" stop-color="#0b5cff" />
+                    <stop offset="1" stop-color="#4f90ee" />
+                  </linearGradient>
+                </defs>
+                <g id="icon_ZM_bleed">
+                  <path id="container" class="cls-1" d="m0,0h100v100H0V0Z" />
+                  <path
+                    id="logo_ZM_wordmark"
+                    class="cls-2"
+                    d="m29.86217,57.65696h-12.40324c-.87023,0-1.64774-.51954-1.98075-1.32352s-.15056-1.72117.4648-2.33642l8.59125-8.59121h-6.15751c-1.69153,0-3.06279-1.37125-3.06279-3.06279h11.4385c.87016,0,1.64763.51939,1.98068,1.32337.33309.80398.15075,1.72102-.46454,2.33657l-8.59128,8.59121h7.1221c1.69153,0,3.06279,1.37125,3.06279,3.06279Zm54.8239-9.57121c0-3.29324-2.67923-5.97244-5.97244-5.97244-1.76155,0-3.34693.76704-4.44104,1.98416-1.09411-1.21711-2.67949-1.98416-4.44104-1.98416-3.29321,0-5.97244,2.67919-5.97244,5.97244v9.57121c1.69153,0,3.06279-1.37126,3.06279-3.06278v-6.50843c0-1.60437,1.30527-2.90965,2.90965-2.90965s2.90965,1.30527,2.90965,2.90965v6.50843c0,1.69153,1.37126,3.06278,3.06279,3.06278v-9.57121c0-1.60437,1.30527-2.90965,2.90965-2.90965s2.90965,1.30527,2.90965,2.90965v6.50843c0,1.69153,1.37126,3.06278,3.06278,3.06278v-9.57121Zm-22.35835,1.91424c0,4.3557-3.53098,7.88668-7.88668,7.88668s-7.88668-3.53098-7.88668-7.88668,3.53099-7.88668,7.88668-7.88668,7.88668,3.53098,7.88668,7.88668Zm-3.06279,0c0-2.66416-2.15973-4.82389-4.82389-4.82389s-4.82389,2.15973-4.82389,4.82389,2.15973,4.82389,4.82389,4.82389,4.82389-2.15973,4.82389-4.82389Zm-13.93568,0c0,4.3557-3.53098,7.88668-7.88668,7.88668s-7.88668-3.53098-7.88668-7.88668,3.53099-7.88668,7.88668-7.88668,7.88668,3.53098,7.88668,7.88668Zm-3.06279,0c0-2.66416-2.15973-4.82389-4.82389-4.82389s-4.82389,2.15973-4.82389,4.82389,2.15973,4.82389,4.82389,4.82389,4.82389-2.15973,4.82389-4.82389Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!----custom menu btn-->
+        <button
+          id="menuBTN"
+          class="flex justify-center items-center w-32 h-32 p-8 rounded-none border-solid border-2 bg-neutral-900 border-neutral-900 hover:border-accent cursor-pointer shadow-lg lg:hidden"
+        >
+          <h2 class="text-neutral-50 text-lg font-display tracking-wider">
+            <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+          </h2>
+        </button>
+        <!----custom menu btn slutar-->
+      </div>
+      <!--flexbox navbar slutar här-->
+
+      <nav
+        id="hiddenMenu"
+        class="absolute z-10 right-0 top-32 hidden lg:flex flex-col lg:flex-row lg:top-0 lg:right-0 shadow-lg"
+      >
+        <button
+          class="flex justify-center items-center w-32 h-32 p-8 rounded-none border-solid border-2 bg-neutral-900 border-neutral-900 hover:border-accent cursor-pointer"
+        >
+          <h2 class="text-neutral-50 text-xs font-display tracking-wider">
+            Products
+          </h2>
+        </button>
+        <button
+          class="flex justify-center items-center w-32 h-32 p-8 rounded-none border-solid border-2 bg-neutral-900 border-neutral-900 hover:border-accent cursor-pointer"
+        >
+          <h2 class="text-neutral-50 text-xs font-display tracking-wider">
+            Solutions
+          </h2>
+        </button>
+        <button
+          class="flex justify-center items-center w-32 h-32 p-8 rounded-none border-solid border-2 bg-neutral-900 border-neutral-900 hover:border-accent cursor-pointer"
+        >
+          <h2 class="text-neutral-50 text-xs font-display tracking-wider">
+            Resources
+          </h2>
+        </button>
+        <button
+          class="flex justify-center items-center w-32 h-32 p-8 rounded-none border-solid border-2 bg-neutral-900 border-neutral-900 hover:border-accent cursor-pointer"
+        >
+          <h2 class="text-neutral-50 text-xs font-display tracking-wider">
+            Support
+          </h2>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!---hero section-->
+      <section
+        class="w-screen lg:h-screen flex flex-col justify-center items-center lg:flex-row"
+      >
+        <!---container-->
+        <div
+          class="w-screen lg:w-1/3 flex flex-col items-center justify-start gap-8 pl-20 pt-36 pb-24 pr-20 lg:pl-20 lg:pr-20 lg:pb-24"
+        >
+          <h1 class="font-display text-4xl text-secondary">
+            Transform your information into action with AI Companion
+          </h1>
+          <h2 class="font-sans text-neutral-800">
+            Accomplish more with Zoom Workplace: your AI-first work platform
+            featuring AI Companion 2.0, included at no extra cost.*
+          </h2>
+          <div class="flex flex-row justify-center items-center gap-4">
+            <button class="btn btn-md btn-accent rounded-full">
+              Get Started
+            </button>
+            <button
+              class="btn btn-md border-2 rounded-full font-display text-secondary hover:text-accent"
+            >
+              Discover Zoom Workplace
+            </button>
+          </div>
+        </div>
+
+        <!----end container-->
+        <div class="lg:pt-52 lg:pl-20 lg:pr-20 lg:pb-20 lg:w-2/3">
+          <img src="./img/focus-mode-host-view.png" class="" />
+        </div>
+      </section>
+
+      <!---AI Companion-->
+
+      <section
+        class="w-screen lg:h-screen flex flex-col justify-start items-center lg:flex-row lg:flex-wrap bg-secondary"
+      >
+        <!---CONTAINER-->
+        <div class="p-20 lg:h-1/2 lg:w-1/2 bg-secondary">
+          <img src="./img/aicompanion.png" class="" />
+        </div>
+        <div
+          class="w-screen lg:w-1/2 flex flex-col items-start justify-start gap-8 bg-secondary p-20"
+        >
+          <h1 class="font-display text-4xl text-neutral-50">
+            The AI-first work platform for human connection
+          </h1>
+          <h2 class="font-sans text-neutral-50">
+            Work happy with AI Companion, reimagine teamwork, enhance customer
+            relationships, and enable seamless experiences with a choice of
+            third-party apps and integrations for best-in-class collaboration.
+          </h2>
+
+          <button class="btn btn-md btn-primary rounded-full">
+            Discover Possibilities
+          </button>
+
+          <h2 class="font-sans text-sm text-neutral-400">
+            *AI Companion is included at no additional cost with the paid
+            services in your Zoom user account and may not be available for all
+            regions and industry verticals. Some features not currently
+            available across all regions or plans and are subject to change
+          </h2>
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center bg-primary gap-8 p-16 w-screen lg:h-1/2"
+        >
+          <h1 class="font-display text-4xl text-neutral-50">
+            Ready to get started?
+          </h1>
+          <div class="flex flex-row justify-center items-center gap-4">
+            <button class="btn btn-lg btn-accent rounded-full">
+              Sign Up, It's Free
+            </button>
+            <button
+              class="btn btn-lg border-2 border-neutral-50 btn-primary rounded-full"
+            >
+              Plans & Pricing
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="hidden absolute bottom-0 left-0 w-screen h-32 lg:flex items-start"
+    >
+      <button
+        class="flex justify-center items-center w-32 h-32 p-8 rounded-none border-solid border-2 bg-neutral-900 border-neutral-900 hover:border-accent cursor-pointer"
+      >
+        <i class="fa-brands fa-facebook text-neutral-50 text-lg"></i>
+      </button>
+      <button
+        class="flex justify-center items-center w-32 h-32 p-8 rounded-none border-solid border-2 bg-neutral-900 border-neutral-900 hover:border-accent cursor-pointer"
+      >
+        <i class="fa-brands fa-instagram text-neutral-50 text-lg"></i>
+      </button>
+      <button
+        class="flex justify-center items-center w-32 h-32 p-8 rounded-none border-solid border-2 bg-neutral-900 border-neutral-900 hover:border-accent cursor-pointer"
+      >
+        <i class="fa-brands fa-x text-neutral-50 text-lg"></i>
+      </button>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/1b040fe3b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

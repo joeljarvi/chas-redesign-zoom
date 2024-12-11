@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Almaden Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./fonts/Almaden-Sans/woff2/AlmadenSans-Medium-WebXL.woff2)
+      format("woff2");
+    src: url(./fonts/Almaden-Sans/woff/AlmadenSans-Medium-WebXL.woff)
+      format("woff");
+  }
+
+  @font-face {
+    font-family: "Almaden Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/Almaden-Sans/woff2/AlmadenSans-Book-WebXL.woff2)
+      format("woff2");
+    src: url(./fonts/Almaden-Sans/woff/AlmadenSans-Book-WebXL.woff)
+      format("woff");
+  }
+
+  @font-face {
+    font-family: "Almaden Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./fonts/Almaden-Sans/woff2/AlmadenSans-SemiBold-WebXL.woff2)
+      format("woff2");
+    src: url(./fonts/Almaden-Sans/woff/AlmadenSans-SemiBold-WebXL.woff)
+      format("woff");
+  }
+
+  @font-face {
+    font-family: "Happy Display";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/Happy-Display/woff2/HappyDisplay-Regular.woff2)
+      format("woff2");
+    src: url(./fonts/Happy-Display/woff/HappyDisplay-Regular.woff)
+      format("woff");
+  }
+
+  @font-face {
+    font-family: "Happy Display";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./fonts/Happy-Display/woff2/HappyDisplay-SemiBold.woff2)
+      format("woff2");
+    src: url(./fonts/Happy-Display/woff/HappyDisplay-SemiBold.woff)
+      format("woff");
+  }
+}
